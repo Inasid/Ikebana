@@ -15,18 +15,18 @@
         }
 
         body {
-            font-family: 'Georgia', serif;
-            background: linear-gradient(135deg, #f5f3f0, #e8e5e0);
+            font-family: Arial, Helvetica, sans-serif;
+            background: beige;
             min-height: 100vh;
             color: #2c3e50;
         }
 
        .banner-container {
             width: 100%;
-            height: 400px;
+            height: 600px;
             position: relative;
-            background: tomato;
-            border-bottom: 3px solid #4682B4;
+            background: beige;
+            border-bottom: none;
             overflow: hidden;
             cursor: pointer;
             margin-bottom: 20px;
@@ -36,56 +36,64 @@
             position: absolute;
             top: 50%;
             left: 50px;
+        
             transform: translateY(-50%);
             z-index: 10;
-            color: #2F4F4F;
+            color: rgb(253, 84, 54);
             pointer-events: none;
+            font-weight: bold;
         }
 
         .banner-text h1 {
-            font-size: 3rem;
+            font-size: 6rem;
             font-weight: bold;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            
         }
 
         .banner-text p {
             font-size: 1.2rem;
             opacity: 0.8;
+             color: rgb(253, 84, 54);
+             font-weight: 100;
         }
 
         .click-instruction {
             position: absolute;
             bottom: 20px;
             right: 20px;
-            background: rgba(255, 255, 255, 0.9);
+            background: beige;
+            border-style: solid;
+            border-color: rgb(253, 84, 54);
             padding: 10px 15px;
-            border-radius: 20px;
             font-size: 0.9rem;
-            color: #2F4F4F;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            color: rgb(253, 84, 54);
+            
         }
 
         .main-container {
+            
             display: flex;
             min-height: calc(100vh - 200px);
             max-height: 600px;
-            gap: 2rem;
+            gap: none;
             padding: 2rem;
+             background: beige;
         }
 
         .canvas-section {
             flex: 0 0 700px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            background: beige;
+            border: solid rgb(253, 84, 54);
+            border-radius: none;
+            box-shadow: none;
             overflow: hidden;
         }
 
         .canvas-controls {
             padding: 1rem;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e9ecef;
+            background: beige;
+            border-bottom: 1px solid beige;;
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -93,43 +101,48 @@
 
         .canvas-controls label {
             font-weight: bold;
-            color: #495057;
+            color: rgb(253, 84, 54);
         }
 
         .color-picker {
             padding: 0.5rem;
-            border: 2px solid #dee2e6;
-            border-radius: 8px;
+            border: 1px solid rgb(253, 84, 54);
+            border-radius: none;
             cursor: pointer;
             transition: border-color 0.3s;
+            background: beige;
+            color: rgb(253, 84, 54);
         }
 
         .color-picker:hover {
-            border-color: #007bff;
+            background-color: rgb(253, 84, 54);
         }
 
         .download-btn {
-            background: linear-gradient(135deg, #28a745, #20c997);
-            color: white;
+            background: rgb(253, 84, 54);
+            color: beige;
             border: none;
             padding: 0.5rem 1rem;
-            border-radius: 8px;
+            border-radius: none;
             cursor: pointer;
             font-size: 0.9rem;
             font-weight: bold;
             transition: all 0.3s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: none;
         }
 
         .download-btn:hover {
             transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            background-color: beige;
+            border: solid rgb(253, 84, 54);
+            color: rgb(253, 84, 54);
+            
         }
 
         .canvas {
             width: 100%;
             height: 500px;
-            background: #f8f9fa;
+            background: beige;
             position: relative;
             transition: background-color 0.3s;
         }
@@ -144,20 +157,21 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
+            color: rgb(253, 84, 54);
         }
 
         .canvas-text h1 {
             font-size: 2.5rem;
-            color: #2c3e50;
+            
             margin-bottom: 0.5rem;
             font-weight: bold;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-shadow: none;
             font-family: 'Georgia', serif;
         }
 
         .canvas-text h2 {
             font-size: 1rem;
-            color: #7f8c8d;
+            
             margin-bottom: 1rem;
             font-style: italic;
             font-weight: normal;
@@ -166,7 +180,7 @@
         .canvas-text p {
             font-size: 0.85rem;
             line-height: 1.5;
-            color: #34495e;
+           
             text-align: left;
         }
 
@@ -187,9 +201,9 @@
 
         .flower-palette {
             flex: 1;
-            background: white;
+            background: beige;
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: none;
             padding: 1.5rem;
             max-height: 750px;
             overflow-y: auto;
@@ -201,10 +215,10 @@
         }
 
         .category h3 {
-            color: #2c3e50;
+            color:rgb(253, 84, 54);
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid #3498db;
+            border-bottom: 2px solid rgb(253, 84, 54);
             font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -212,7 +226,7 @@
 
         .category-description {
             font-size: 0.9rem;
-            color: #6c757d;
+            color: rgb(253, 84, 54);
             margin-bottom: 1rem;
             font-style: italic;
         }
@@ -232,32 +246,32 @@
 
         .flower-name {
             font-size: 0.8rem;
-            color: #6c757d;
+            color: rgb(253, 84, 54);
             text-align: center;
             font-weight: 500;
         }
 
         .flower {
-            width: 60px;
+            width: 120px;
             height: 60px;
-            border-radius: 50%;
+            border-radius: none;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: none;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            border: 3px solid white;
+            border: 1px solid rgb(253, 84, 54);
             user-select: none;
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
         }
 
         .flower:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            box-shadow: none;
         }
 
         .flower:active {
@@ -363,11 +377,11 @@
 <body>
     <div class="banner-container">
         <div class="banner-text">
-            <h1>Welcome Home</h1>
-            <p>Click anywhere to grow flowers!</p>
+            <h1>Ikebana bouquet<br> builder</h1>
+            <p>Scroll down to build bouquets guided by the <br>ikebana principles of flower arrangements!</p>
         </div>
         <div class="click-instruction">
-            🌸 Click to bloom flowers
+            Click to bloom flowers
         </div>
     </div>
 
@@ -376,7 +390,7 @@
             <div class="canvas-controls">
                 <label for="bg-color">Canvas Background:</label>
                 <input type="color" id="bg-color" class="color-picker" value="#f8f9fa">
-                <button id="download-btn" class="download-btn">📷 Download Arrangement</button>
+                <button id="download-btn" class="download-btn"> Download Arrangement</button>
             </div>
             <div class="canvas" id="canvas">
                 <div class="canvas-text">
@@ -457,8 +471,8 @@
                         <div class="flower-name">Lotus</div>
                     </div>
                     <div class="flower-container">
-                        <div class="flower tai-4" data-type="tai" data-name="Pampas"></div>
-                        <div class="flower-name">Pampas</div>
+                        <div class="flower tai-4" data-type="tai" data-name="Baby's breath"></div>
+                        <div class="flower-name">Baby's breath</div>
                     </div>
                 </div>
             </div>
@@ -469,20 +483,19 @@
         // Banner p5.js sketch using instance mode
         const bannerSketch = (p) => {
             let bannerFlowers = [];
-            let bannerCanvasHeight = 400;
+            let bannerCanvasHeight = 600;
             let bannerP5Canvas;
             
             // Define your 3 petal colors and 3 center colors here
             const petalColors = [
-                [255, 182, 193], // Light Pink
-                [255, 218, 185], // Peach
-                [230, 230, 250]  // Lavender
+                [229, 193, 183], // Light Pink
+                [228, 152, 128], // Peach
+                [253, 84, 54]  // Red
             ];
             
             const centerColors = [
-                [255, 215, 0],   // Gold
-                [255, 140, 0],   // Dark Orange
-                [178, 34, 34]    // Fire Brick
+               
+                [165, 84, 68]    // Fire Brick
             ];
             
             p.setup = () => {
