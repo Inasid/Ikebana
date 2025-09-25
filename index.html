@@ -681,7 +681,7 @@
             setTimeout(() => {
                 html2canvas(canvas, {
                     backgroundColor: canvas.style.backgroundColor || '#f8f9fa',
-                    scale: 1, // Reduced scale to avoid memory issues
+                    scale: 2, // Reduced scale to avoid memory issues
                     useCORS: false,
                     allowTaint: true,
                     height: canvas.offsetHeight,
